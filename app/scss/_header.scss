@@ -1,11 +1,11 @@
 .header {
-    background-image: url(/images/mobile/image-hero.jpg);
+    background-image: url(../images/mobile/image-hero.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
     @include breackpoint-up(medium){
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-hero.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/desktop/image-hero.jpg);
     }
 
     nav {
