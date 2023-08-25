@@ -1,0 +1,158 @@
+.creations {
+    padding-bottom: 80px;
+    @include breackpoint-down(small){
+        margin-top: 400px;
+    }
+    @include breackpoint-up(medium){
+        margin-top: 225px;
+    }
+    @include breackpoint-up(large){
+        margin-top: 60px;
+        
+        padding-bottom: 160px;
+    }
+    .cta{
+        padding: 10px 40px;
+        font-weight: 500;
+        border: 2px solid $Black;
+        letter-spacing: 5px;
+        background-color: $White;
+        text-decoration: none;
+        color: $Black;
+        z-index: 5;
+        transition: all 200ms ease-in-out;
+        @include breackpoint-down(small){
+            text-align: center;
+            margin-top: 60px;
+            z-index: 5;
+        }
+        &:hover {
+            background-color: $Black;
+            color: $White;
+        }
+    }
+    .heade{
+        margin-bottom: 60px;
+        @include breackpoint-up(large){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+    }
+    h2 {
+        color: $Black;
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 1;
+        text-align: center;
+        margin-top: 40px;
+        @include breackpoint-up(large){
+            font-size: 60px;
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        @include breackpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @include breackpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .grid_image {
+            width: 100%;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+            transition: opacity 200ms ease-in-out;
+            
+            
+            @include breackpoint-up(medium){
+                height: 450px;
+            }
+            .text{
+                padding-left: 40px;
+                padding-bottom: 30px;
+                position: absolute;
+                bottom: 0;
+                h3 {
+                    color: white;
+                    font-size: 40px;
+                    font-weight: 300;
+                    transition: 200ms ease-in-out ;
+                }
+            }
+            @include breackpoint-up(large){
+                &:hover{
+                    opacity: 0.75;
+                    h3 {
+                        color: $Black;
+                    }
+                }
+            }
+        }
+        .image1 {
+            background-image: url(/images/mobile/image-deep-earth.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-deep-earth.jpg);
+            }
+        }
+        .image2 {
+            background-image: url(/images/mobile/image-night-arcade.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-night-arcade.jpg);
+            }
+        }
+        .image3 {
+            background-image: url(/images/mobile/image-soccer-team.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-soccer-team.jpg);
+            }
+        }
+        .image4 {
+            background-image: url(/images/mobile/image-grid.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-grid.jpg);
+            }
+        }
+        .image5 {
+            background-image: url(/images/mobile/image-from-above.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-from-above.jpg);
+            }
+        }
+        .image6 {
+            background-image: url(/images/mobile/image-pocket-borealis.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-pocket-borealis.jpg);
+            }
+        }
+        .image7 {
+            background-image: url(/images/mobile/image-curiosity.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-curiosity.jpg);
+            }
+        }
+        .image8 {
+            background-image: url(/images/mobile/image-fisheye.jpg);
+            @include breackpoint-up(medium){
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/images/desktop/image-fisheye.jpg);
+            }
+        }
+    }
+    .cta__btn {
+        margin-top: 40px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,68 @@
+.leader {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    @include breackpoint-up(large){
+        padding-top: 160px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 448px;
+        position: relative;
+        background-image: url(/images/mobile/image-interactive.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include breackpoint-up(large){
+            background-image: url(/images/desktop/image-interactive.jpg);
+            width: 70%;
+            height: 500px;
+        }
+    }
+    .text__leader{
+            position: absolute;
+            background-color: $White;
+            width: 100%;
+            bottom: -420px;
+            @include breackpoint-up(medium){
+                bottom: -246px;
+            }
+        @include breackpoint-up(large){
+            position: absolute;
+            width: 70%;
+            padding:60px 80px;
+            background-color: $White;
+            bottom: -80px;
+            right: -450px;
+           
+        }
+        h2 {
+            color: $Black;
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: center;
+            margin-top: 40px;
+            @include breackpoint-up(large){
+                font-size: 60px;
+                text-align: left;
+            }
+        }
+        P {
+            font-size: 18px;
+            color: $DarkGray;
+            font-weight: 500;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 2;
+            
+            @include breackpoint-up(large){
+                font-size: 16px;
+                text-align: left;
+            }
+
+        }
+}
+}
